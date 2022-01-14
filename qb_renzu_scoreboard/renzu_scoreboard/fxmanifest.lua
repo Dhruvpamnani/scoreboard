@@ -17,14 +17,14 @@ client_scripts {
 }
 
 server_scripts {
-	'@mysql-async/lib/MySQL.lua',
+
 	"config.lua",
 	"server.lua"
 }
 
-shared_scripts {
-	'@qb-core/import.lua',
-}
+
+	
+
 
 files {
 	'html/index.html',
