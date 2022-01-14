@@ -4,7 +4,8 @@ local GuildID = 1000000000 -- : -- change this to your GuildID
 local DiscToken = ".XssX9w." -- change this to your own discord token
 local FormattedToken = "Bot " .. DiscToken
 local pings = {}
-local loaded = false
+local loaded = false 
+local QBCore = exports['qb-core']:GetCoreObject()
 CreateThread(function()
     Wait(200)
     print("SCOREBOARD LOADED")
