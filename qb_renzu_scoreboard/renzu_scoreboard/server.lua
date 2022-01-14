@@ -14,7 +14,7 @@ end)
 function UploadAvatar(citizenid, avatar)
     Player.PlayerData.metadata["avatar"] = avatar
     Player.Functions.SetMetaData("avatar", Player.PlayerData.metadata["avatar"])
-    exports.ghmattimysql:execute('UPDATE players SET metadata=@metadata WHERE citizenid=@citizenid', {['@metadata'] = json.encode(Player.PlayerData.metadata), ['@citizenid'] = citizenid})
+    exports.oxmysql:execute('UPDATE players SET metadata=@metadata WHERE citizenid=@citizenid', {['@metadata'] = json.encode(Player.PlayerData.metadata), ['@citizenid'] = citizenid})
 end
 
 RegisterNetEvent('renzu_scoreboard:avatarupload')
